@@ -1,0 +1,12 @@
+**AWS & GCP RESOURCE PROVISIONING SCRIPTS**
+
+Interacting with cloud services and products via the commandline facilitates the creation and management of resources to handle your workload. However, this can risk being very repetitive anytime you are required to setup an environment for your workload. A simple but effective way to optimize this process is to create an executable file with the respective list of commands you need to perform certain operations in your cloud environments. A shell script can help achieve this objective. This way, whenever certain modifications need to be made to your environment you can just apply the changes to your configuration right from the script. 
+
+Additionaly, building software and being able to provision cloud resources alongside optimizes and expedites the software development lifecycle(SDLC). AWS and GCP offer Software Development Kits(SDKs) that are managed and maintained by these cloud providers. These SDKs provide an enterprise the option to provision cloud resources and manage them in a version control system like Git just as source code is managed. `Boto3` and `gcloud` are the SDKs offered by AWS and GCP respectively for coding in python. Both libraires can be installed with pip(Python's package manager). Python scripts coupled with AWS or GCP libraries are a powerful and an efficient way of performing operations on cloud resources in your environment without having to toggle between the web console and your IDE each time. The Python scripts in this repository were referenced from the AWS and GCP libraries. You can look them up to find more information on how to use them with the programming language of your choice. 
+
+
+This repository contains a number of such scripts to perform certain operations that are normally carried out on a workload in a  cloud environment. These scripts will be provided for AWS and GCP.
+
+PS: For these scripts to work, do make sure that the commandline utitlity tools of each cloud service provider are installed and configured. The commadline tool for AWS is `aws` and GCP uses the `gcloud` command. The SDKs libraires for both cloud providers must also be installed as mentioned earlier.
+Furthermore, each user required to perfom operations with the aforementioned scripts must be granted programmatic access to the required cloud services and products by assigning the requisite policies to that user, and in cognisance with the security pillar of the Well Arcitected Framework(WAF), apply the principle of least priviledge to get a task done.
+
