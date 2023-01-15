@@ -9,7 +9,7 @@ table = dynamodb.Table("<tablename>")  # insert a table name
 
 
 def lambda_handler(event, context):
-    response = table.get_item(key={"id": "earth"})
+    response = table.get_item(key={"id": "value"})
 
     print(response)
 

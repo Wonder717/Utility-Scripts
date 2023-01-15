@@ -9,6 +9,6 @@ table = dynamodb.Table("<tablename>")  # insert a table name
 
 
 def lambda_handler(event, context):
-    table.put_item(Item={"id": "neptune", "temp": "super cold"})
+    table.put_item(Item={"id": "value", "property": "value"})
     response = {"message": "Item added"}
     return {"statusCode": 200, "body": response}
